@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp02.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25"
+            VerticalOptions="Center">
+
+            <Label
+                Text="Suma de 2 dígitos"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Center"
+                TextColor="{DynamicResource PrimaryTextColor}"/>
+
+            <Entry
+                x:Name="txtNumero1"
+                  Placeholder="Numero 1: "
+                  Keyboard="Numeric"/>
+
+            <Entry
+               x:Name="txtNumero2"
+                 Placeholder="Numero 2:"
+                 Keyboard="Numeric"/>
+
+            <Button
+               Text="Sumar"
+               Clicked="OnSumarClicked"/>
+
+            <Label
+               x:Name="lblResultado"
+               Text="Resultado"
+               FontSize="24"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               TextColor="{DynamicResource PrimaryTextColor}"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
