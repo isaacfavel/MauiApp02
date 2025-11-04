@@ -10,25 +10,64 @@
             VerticalOptions="Center">
 
             <Label
-                Text="Suma de 2 dígitos"
+                Text="Calculadora"
                 SemanticProperties.HeadingLevel="Level1"
-                FontSize="32"
-                HorizontalOptions="Center"
-                TextColor="{DynamicResource PrimaryTextColor}"/>
+                FontSize="40"
+                TextColor="Black"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"/>
 
             <Entry
                 x:Name="txtNumero1"
                   Placeholder="Numero 1: "
+                    FontSize="24"
                   Keyboard="Numeric"/>
 
             <Entry
                x:Name="txtNumero2"
                  Placeholder="Numero 2:"
+                    FontSize="24"
                  Keyboard="Numeric"/>
 
             <Button
-               Text="Sumar"
-               Clicked="OnSumarClicked"/>
+                Text="Sumar"
+                Clicked="OnSumarClicked"
+                 FontSize="24"
+                BackgroundColor="CornflowerBlue"
+                TextColor="White"
+                FontAttributes="Bold" 
+                WidthRequest="120"
+                HeightRequest="50" />
+
+
+
+            <Button
+                Text="Restar"
+                 FontSize="24"
+                BackgroundColor="CornflowerBlue"
+                FontAttributes="Bold"
+                Clicked="OnRestarClicked"
+                WidthRequest="120"
+                HeightRequest="50"/>
+                
+
+            <Button
+                Text="Multiplicar"
+                 FontSize="24"
+                BackgroundColor="CornflowerBlue"
+                FontAttributes="Bold"
+                Clicked="OnMultiplicarClicked"
+                WidthRequest="150"
+                HeightRequest="50"/>
+
+            <Button
+                Text="Dividir"
+                 FontSize="24"
+                BackgroundColor="CornflowerBlue"
+                FontAttributes="Bold"
+                Clicked="OnDividirClicked"
+                WidthRequest="120"
+                HeightRequest="50"/>
 
             <Label
                x:Name="lblResultado"
