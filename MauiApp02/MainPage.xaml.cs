@@ -1,4 +1,6 @@
-﻿namespace MauiApp02
+﻿using System.Runtime.InteropServices.ObjectiveC;
+
+namespace MauiApp02
 {
     public partial class MainPage : ContentPage
     {
@@ -77,6 +79,15 @@
 
 
         }
-        
+
+        private void OnBorrarClicked(Object? sender, EventArgs e)
+        {
+            txtNumero1.Text = "";
+            txtNumero2.Text = "";
+            lblResultado.Text = "Resultado:";
+            txtNumero1.Focus();
+        }
+
+
     }
 }
