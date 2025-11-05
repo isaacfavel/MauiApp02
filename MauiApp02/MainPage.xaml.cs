@@ -17,9 +17,10 @@ namespace MauiApp02
             {
 
                 int numwero1 = int.Parse(txtNumero1.Text);
-                int numwero2 = int.Parse(txtNumero1.Text);
+                int numwero2 = int.Parse(txtNumero2.Text);
                 int resultado = numwero1 + numwero2;
                 lblResultado.Text = $"Resultado: {resultado}";
+                
             }
             catch (Exception ex) { 
             
@@ -34,7 +35,7 @@ namespace MauiApp02
             {
 
                 int numwero1 = int.Parse(txtNumero1.Text);
-                int numwero2 = int.Parse(txtNumero1.Text);
+                int numwero2 = int.Parse(txtNumero2.Text);
                 int resultado = numwero1 - numwero2;
                 lblResultado.Text = $"Resultado: {resultado}";
             }
@@ -51,7 +52,7 @@ namespace MauiApp02
             {
 
                 int numwero1 = int.Parse(txtNumero1.Text);
-                int numwero2 = int.Parse(txtNumero1.Text);
+                int numwero2 = int.Parse(txtNumero2.Text);
                 int resultado = numwero1 * numwero2;
                 lblResultado.Text = $"Resultado: {resultado}";
             }
@@ -68,7 +69,7 @@ namespace MauiApp02
             {
 
                 int numwero1 = int.Parse(txtNumero1.Text);
-                int numwero2 = int.Parse(txtNumero1.Text);
+                int numwero2 = int.Parse(txtNumero2.Text);
                 int resultado = numwero1 / numwero2;
                 lblResultado.Text = $"Resultado: {resultado}";
             }
@@ -84,8 +85,9 @@ namespace MauiApp02
         {
             txtNumero1.Text = "";
             txtNumero2.Text = "";
-            lblResultado.Text = "Resultado:";
+            lblResultado.Text = "Resultado";
             txtNumero1.Focus();
+            
         }
 
 
