@@ -16,9 +16,9 @@ namespace MauiApp02
             try
             {
 
-                int numwero1 = int.Parse(txtNumero1.Text);
-                int numwero2 = int.Parse(txtNumero2.Text);
-                int resultado = numwero1 + numwero2;
+                double numwero1 = double.Parse(txtNumero1.Text);
+                double numwero2 = double.Parse(txtNumero2.Text);
+                double resultado = numwero1 + numwero2;
                 lblResultado.Text = $"Resultado: {resultado}";
                 
             }
@@ -34,9 +34,9 @@ namespace MauiApp02
             try
             {
 
-                int numwero1 = int.Parse(txtNumero1.Text);
-                int numwero2 = int.Parse(txtNumero2.Text);
-                int resultado = numwero1 - numwero2;
+                double numwero1 = double.Parse(txtNumero1.Text);
+                double numwero2 = double.Parse(txtNumero2.Text);
+                double resultado = numwero1 - numwero2;
                 lblResultado.Text = $"Resultado: {resultado}";
             }
             catch (Exception ex)
@@ -51,9 +51,9 @@ namespace MauiApp02
             try
             {
 
-                int numwero1 = int.Parse(txtNumero1.Text);
-                int numwero2 = int.Parse(txtNumero2.Text);
-                int resultado = numwero1 * numwero2;
+                double numwero1 = double.Parse(txtNumero1.Text);
+                double numwero2 = double.Parse(txtNumero2.Text);
+                double resultado = numwero1 * numwero2;
                 lblResultado.Text = $"Resultado: {resultado}";
             }
             catch (Exception ex)
@@ -68,9 +68,9 @@ namespace MauiApp02
             try
             {
 
-                int numwero1 = int.Parse(txtNumero1.Text);
-                int numwero2 = int.Parse(txtNumero2.Text);
-                int resultado = numwero1 / numwero2;
+                double numwero1 = double.Parse(txtNumero1.Text);
+                double numwero2 = double.Parse(txtNumero2.Text);
+                double resultado = numwero1 / numwero2;
                 lblResultado.Text = $"Resultado: {resultado}";
             }
             catch (Exception ex)

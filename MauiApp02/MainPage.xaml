@@ -10,88 +10,87 @@
             VerticalOptions="Center">
 
             <Label
-                Text="Calculadora"
-                SemanticProperties.HeadingLevel="Level1"
-                FontSize="40"
-                TextColor="Black"
-                FontAttributes="Bold"
-                HorizontalOptions="Center"/>
+             Text="Calculadora"
+             SemanticProperties.HeadingLevel="Level1"
+             FontSize="40"
+             TextColor="Blue"
+             FontAttributes="Bold"
+             HorizontalOptions="Center"/>
 
             <Entry
-                x:Name="txtNumero1"
-                  Placeholder="Numero 1: "
-                    FontSize="24"
-                  Keyboard="Numeric"/>
+             x:Name="txtNumero1"
+             Placeholder="Numero 1: "
+             FontSize="24"
+             Keyboard="Numeric"/>
 
             <Entry
-               x:Name="txtNumero2"
-                 Placeholder="Numero 2:"
-                    FontSize="24"
-                 Keyboard="Numeric"/>
+             x:Name="txtNumero2"
+             Placeholder="Numero 2:"
+             FontSize="24"
+             Keyboard="Numeric"/>
 
-            <Button
-                Text="Sumar"
+            <Label
+             x:Name="lblResultado"
+             Text="Resultado:"
+             FontSize="24"
+            FontAttributes="Bold"
+            HorizontalOptions="Fill"/>
+
+
+
+            <HorizontalStackLayout HorizontalOptions="Center" Spacing="10">
+                <Button
+                Text="+"
                 Clicked="OnSumarClicked"
                  FontSize="24"
                 BackgroundColor="CornflowerBlue"
                 TextColor="White"
                 FontAttributes="Bold" 
-                WidthRequest="120"
+                WidthRequest="0"
                 HeightRequest="50" />
 
-            
 
-
-
-            <Button
-                Text="Restar"
+                <Button
+                Text="-"
                  FontSize="24"
                 BackgroundColor="CornflowerBlue"
                 TextColor="White"
                 FontAttributes="Bold"
                 Clicked="OnRestarClicked"
-                WidthRequest="120"
+                WidthRequest="0"
                 HeightRequest="50"/>
-                
 
-            <Button
-                Text="Multiplicar"
+
+                <Button
+                Text="*"
                  FontSize="24"
                 BackgroundColor="CornflowerBlue"
                 TextColor="White"
                 FontAttributes="Bold"
                 Clicked="OnMultiplicarClicked"
-                WidthRequest="150"
+                WidthRequest="0"
                 HeightRequest="50"/>
 
-            <Button
-                Text="Dividir"
+                <Button
+                Text="/"
                  FontSize="24"
                 BackgroundColor="CornflowerBlue"
                 TextColor="White"
                 FontAttributes="Bold"
                 Clicked="OnDividirClicked"
-                WidthRequest="120"
+                WidthRequest="0"
                 HeightRequest="50"/>
 
-            <Button
-                Text="Borrar"
+                <Button
+                Text="C"
                 Clicked="OnBorrarClicked"
                 FontSize="24"
-                BackgroundColor="Orange"
+                BackgroundColor="OrangeRed"
                 TextColor="White"
                 FontAttributes="Bold" 
-                WidthRequest="120"
+                WidthRequest="0"
                 HeightRequest="50" />
-            <Label
-               x:Name="lblResultado"
-               Text="Resultado"
-               FontSize="24"
-               FontAttributes="Bold"
-               HorizontalOptions="Center"
-               TextColor="{DynamicResource PrimaryTextColor}"/>
-
+            </HorizontalStackLayout>
         </VerticalStackLayout>
     </ScrollView>
-
 </ContentPage>
